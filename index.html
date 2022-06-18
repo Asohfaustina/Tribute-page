@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tribute page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body {
+        background-color: gainsboro;
+    }
+
+    .navigation,
+    .navigate {
+        list-style-type: none;
+        background-color: powderblue;
+        overflow: hidden;
+        cursor: pointer;
+
+
+    }
+
+    .navigate li {
+        text-align: center;
+        padding: 7px;
+
+    }
+
+    .navigate li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        font-weight: 500;
+
+    }
+
+    .navigation li a {
+        display: block;
+        padding: 14px 16px;
+        text-align: center;
+        float: left;
+        color: black;
+        text-decoration: none;
+
+
+
+    }
+
+
+
+
+    li a:hover {
+        background-color: whitesmoke;
+    }
+
+    ul h1 {
+        display: block;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 30px;
+        vertical-align: middle;
+        padding: 0px;
+        margin: 0px;
+
+
+
+    }
+
+    h2 {
+        text-align: center;
+        padding: 20px 20px;
+        margin-top: 30px;
+    }
+
+    .wole {
+        height: auto;
+        width: 500px;
+        margin: auto;
+        display: block;
+    }
+
+    #des {
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+
+    .lead {
+        text-align: center;
+    }
+
+    li button {
+
+        display: none;
+    }
+
+    button span {
+        font-size: 36px;
+        display: none;
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+
+        .navigation li a {
+            display: none;
+        }
+
+        .navigation h1 {
+            float: left;
+        }
+
+
+
+        li button {
+
+            display: block;
+        }
+
+        button span {
+
+            display: block;
+
+        }
+
+
+
+        .collapsibleNavbar {
+            display: block;
+        }
+
+        div .container ul li {
+            font-weight: 100;
+            padding: 7px;
+
+        }
+    }
+
+</style>
+
+<body>
+    <!--navbar-->
+    <div class="shadow-lg">
+        <ul class="navigation">
+            <li><a href="trial.html">HOME</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li style="float: right"><a href="">SEARCH</a></li>
+            <li style="float: right"><a href="">MORE</a></li>
+            <h1> A Tribute Page </h1>
+            <li style="float: right">
+                <button type=" button" data-toggle="collapse" data-target="#demot">
+                    <i class="fa fa-navicon"></i>
+                </button>
+            </li>
+        </ul>
+
+    </div>
+    <!-- Navbar links -->
+
+    <div class="collapse  " id="demot">
+        <ul class="navigate">
+            <li>
+                <a class="active" href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#">NEWS</a>
+            </li>
+            <li>
+                <a href="#">ABOUT</a>
+            </li>
+            <li>
+                <a href="#">SEARCH</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Wole Soyinka <br> <small>"The greatest fear to freedom is the absense of criticism"</small> </h2>
+
+
+    </div>
+    <div class="container">
+
+        <img src="https://cdn.vanguardngr.com/wp-content/uploads/2019/12/Wole-Soyinka.jpg" class="  wole" alt="Wole soyinka">
+        <small id="des"><b>Playwright.Poet.Author</b> (1934)
+        </small>
+    </div>
+
+
+    <div class="container">
+
+        <button data-toggle="collapse" data-target="#col">View Bio</button>
+        <div class="collapse " id="col">
+            <p> <b>Names</b> Akínwándé Olúwolé Babátúndé Sóyíinká</p>
+            <p><b>Born</b> 13 July 1934 (age 87)</p>
+            <p> <b> State of Origin</b> Abeokuta, Nigeria (now Ogun State, Nigeria)</p>
+            <p> <b>Occupation</b> Author, poet,playwright</p>
+            <p> <b>Nationality</b> Nigerian</p>
+            <p> <b>Education</b> Abeokuta Grammar School
+                University of Leeds
+                Period 1957–present</p>
+            <p> <b>Genre</b> Drama novel poetry </p>
+            <p> <b>Subject Comparative</b> Literature</p>
+            <p>
+                <b>Relatives</b> Ransome-Kuti family
+            </p>
+            <p>
+                <b> Notable awards</b>
+                <br> Nobel Prize in Literature
+                1986. <br>
+                Benson Medal from Royal Society of Literature
+                1990. <br>
+                Academy of Achievement Golden Plate Award
+                2009. <br>
+                Anisfield-Wolf Book Award, Lifetime Achievement
+                2012.
+            </p>
+
+        </div>
+    </div>
+    <div>
+        <p class="lead text-info  ">Things you need to know about wole soyinka</p>
+
+        <div class="container">
+            <ul>
+                <li>He was awarded the 1986 Nobel Prize in Literature,the first sub-Saharan African to be honoured in that category.</li>
+                <li> He took an active role in Nigeria's political history and its campaign for independence from British colonial rule.</li>
+                <li> In 1965, he seized the Western Nigeria Broadcasting Service studio and broadcast a demand for the cancellation of the Western Nigeria Regional Elections.</li>
+                <li> In 1967, during the Nigerian Civil War, he was arrested by the federal government of General Yakubu Gowon and put in solitary confinement for two years.</li>
+                <li> During the regime of General Sani Abacha, Soyinka escaped from Nigeria on a motorcycle via the "NADECO Route." Abacha later proclaimed a death sentence against him "in absentia.</li>
+                <li>In Nigeria, Soyinka was a Professor of Comparative literature (1975 to 1999) at the Obafemi Awolowo University, then called the University of Ife.</li>
+                <li>While in the United States, he first taught at Cornell University as Goldwin Smith professor for African Studies and Theatre Arts from 1988 to 1991.</li>
+                <li>Soyinka wrote the first full-length play produced on Nigerian television.</li>
+                <li>Soyinka has been married three times and divorced twice. He has children from his three marriages. </li>
+                <li>In 2014, he revealed his battle with prostate cancer.
+
+                </li>
+            </ul>
+        </div>
+        <p style="font-size: 20px"> CLICK To read more on Wole Soyinka <a href="https://en.wikipedia.org/wiki/Wole_Soyinka">WikipediA</a> </p>
+
+
+
+
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
